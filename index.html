@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flatness: Responsive Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css	'>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/grid-system.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+    	<a href="#" id="logo"></a>
+    	<nav id="menu">
+        	<a href="#" class="nav-mobile" id="nav-mobile"></a>
+        	<ul>
+           		<li><a href="#">lifestyle</a></li>
+            	<li><a href="#">flowers</a></li>
+            	<li><a href="#">fashion</a></li>
+            	<li><a href="#">news</a></li>
+            	<li><a href="#">features</a></li>
+        	</ul>
+    	</nav>
+    </div>
+</header>
+<section>		
+	<div class="container">
+		<div class="flores">
+			<div class="intro">
+				<h1>Spring Came</h1>
+				<p>
+				Life - Amanda Rey - 10th March 2015
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+    	<div class="row">
+    		<div class="img">
+   				<img src="image/image7.jpg" alt="" class="foto">
+   				<h3>Floral Fragance</h3>
+   				<p>Life Amanda Ray 10th March 2015</p>
+    		</div>
+    		<div class="img">
+    			<img src="image/image3.jpg" alt="flores" class="foto">
+    			<h3>Now with Flatness</h3>
+   				<p>News Amanda Ray 28th July 2015</p>
+    		</div>
+    		<div class="img">
+    			<img src="image/image2.jpg" alt="flores" class="foto">
+    			<h3>Garden flowers</h3>
+   				<p>Life Amanda Ray 28th October 2015</p>
+    		</div>
+    	</div>
+    </div>
+</section>
+<section>
+	<div class="container">
+		<div class="img uno">
+				<img src="image/image4.jpg" class="flor">
+				<h3>Now with Flatness</h3>
+				<p class="sb">News Amanda Ray 28th 2015</p>
+				<p class="rt">Geen life in sings bearing one. Deep there cattle don't night night, was fowl seed likeness isn't, seed god and light he creepeth seasons darkness.Without the fourth seasons image He yielding light years light dry. Isn't place face face called. Let lesser female without. Night saying after day third</p>
+				<iframe src="https://player.vimeo.com/video/56810854" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<p class="rt">
+					Rule of us behold it moved.Made.Them Hard, which darkness two given.Fowt it moved behold earth for own.Midst that grass beginning divide their together. Tree one every first given earth very greater. Man evening. Set seed vold meat bearing. Bring creature. Moving set.
+				</p>
+		</div>
+		<div class="founder">
+			<div class="buscar">
+				<input type="text" placeholder="Search">
+			</div>
+			<div class="bio">
+				<h3>About Me</h3>
+				<img src="image/kew_gardens_3_500x500.jpg" alt="fundadora" class="image">
+				<p class="title">Amanda Ray</p>
+				<p>Shall Together blessed. Also thing, the upon created fourth. Rule beginning.Our behold over.</p>
+				<a href="#"><i class="fa fa-facebook-official"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>
+</body>
+</html>
